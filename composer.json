@@ -1,0 +1,29 @@
+{
+  "name": "cjario/omniship-dpd",
+  "description": "DPD Shipping Carrier for Omniship",
+  "type": "library",
+  "keywords": [
+    "shipping",
+    "codejar",
+    "carrier",
+    "dpd"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tarun Mukherjee",
+      "email": "tmukherjee13@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Omniship\\DPD\\": "src/"
+    }
+  },
+  "require": {
+    "cjario/omniship-common": "^1"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3"
+  }
+}
