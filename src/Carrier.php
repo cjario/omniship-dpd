@@ -24,19 +24,67 @@ class Carrier extends AbstractCarrier
     /**
      * @return string
      */
-    public function getApiKey()
+    public function getFid()
     {
-        return $this->getParameter('apiKey');
+        return $this->getParameter('fid');
     }
 
     /**
      * @param string $value
      * @return $this
      */
-    public function setApiKey($value)
+    public function setFid($value)
     {
-        return $this->setParameter('apiKey', $value);
+        return $this->setParameter('fid', $value);
     }
+
+    public function getUsername()
+    {
+        return $this->getParameter('username');
+    }
+
+    public function setUsername($value)
+    {
+        return $this->setParameter('username', $value);
+    }
+
+    public function getPassword()
+    {
+        return $this->getParameter('password');
+    }
+
+    public function setPassword($value)
+    {
+        return $this->setParameter('password', $value);
+    }
+
+    /**
+     * Set sender data
+     * @param array $sender
+     */
+    public function setSender(array $sender)
+    {
+        $this->sender = $sender;
+    }
+
+    /**
+     * Get sender data
+     * @return array
+     */
+    public function getSender()
+    {
+        return $this->sender;
+    }
+
+    /**
+     * Get session id
+     * @return string
+     */
+    public function getSessionId()
+    {
+        return $this->sessionId;
+    }
+
 
     /**
      * Initialize this carrier with default parameters
